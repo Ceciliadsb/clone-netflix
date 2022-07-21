@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="cabecalho">
+            <img src="img/netflix.svg" alt="netflix" id="net">
+            <button id="entrar">Entrar</button>
+        </div>
+
+        <div>
+            <h1 id="titulo">Filmes, séries e muito mais.Sem limites.
+            </h1>
+            <p id="um">Assista onde quiser. Cancele quando quiser.</p>
+            <p id="dois">Pronto para assistir?Informe seu email para criar ou reiniciar sua assinatura </p>
+            <div id="entrada-botao">
+                <input placeholder="Email">
+                <button id="email">Vamos lá<img src="img/seta.svg" alt="seta" ></button>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div id="fundo-2">
+        <h2>
+            Perguntas Frequentes
+        </h2>
+        <button id="perguntas">O que é a Netflix ?<img src="img/fechar.svg" alt="fechar" id="img-perg"> </button>
+        <div id="respostas">
+            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ratione! Enim, debitis
+                quidem quasi labore
+                numquam voluptas nostrum impedit inventore sequi repellendus beatae ullam assumenda rem quas minima
+                quisquam corrupti.</p>
+            <br>
+            <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore odit blanditiis
+                praesentium laborum totam
+                ipsa ipsam harum fugiat quam molestias cupiditate, nulla, impedit eveniet, aut voluptates ea deleniti
+                molestiae temporibus.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+    let botao = document.getElementById("perguntas")
+    let menu = document.getElementById("respostas")
+    let img = document.getElementById("img-perg")
+    let paragrafo = document.getElementById("dois")
+
+
+    function entrada (){
+        
+
+
+    }
+
+    function respostas(){
+
+        if(menu.style.display=="none"){
+            menu.style.display= "block"
+            img.id="img-perg-girar"
+        }else{
+            menu.style.display= "none"
+            img.id="img-perg"
+        }
+        
+        
+
+    }
+ 
+ botao.addEventListener("click",respostas )
+
+
+</script>
+
+</html>
